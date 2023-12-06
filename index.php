@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-
-    <main>
-        <div class="container">
+    <div class="container clearfix">
+        <main>
             <?php if ( have_posts() ): ?>
                 <?php while ( have_posts() ): the_post(); ?>
                     <article class="post">
@@ -9,7 +8,8 @@
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </h3>
                         </h3>
-                        <div class="meta">Created By <?php the_author(); ?>
+                        <div class="meta">Created By
+                            <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a>
                             on <?php the_time( 'F j, Y g:i a' ); ?>
                         </div>
                         <?php if ( has_post_thumbnail() ): ?>
@@ -30,7 +30,6 @@
             <?php else : ?>
                 <?php echo wpautop( 'Sorry, no posts were found' ) ?>
             <?php endif; ?>
-        </div>
-    </main>
+        </main>
 
 <?php get_footer(); ?>

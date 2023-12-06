@@ -29,6 +29,8 @@ header h1 {
 
 main {
     margin: 15px 0;
+    float: left;
+    width: 68%;
 }
 
 footer {
@@ -38,15 +40,25 @@ footer {
     text-align: center;
 }
 
+a {
+    color: #333;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;
     overflow: auto;
 }
 
-a {
-    color: #333;
-}
 
 a.button {
     display: inline-block;
@@ -62,11 +74,13 @@ article.post {
     border-bottom: 1px #ccc solid;
     padding-bottom: 20px;
 }
-
 .meta {
     background: #333;
     color: #fff;
     padding: 5px;
+}
+.meta a {
+    color: #fff;
 }
 .post-thumbnail img {
     width: 100%;
@@ -91,5 +105,24 @@ article.post {
 
 .main-nav ul li a {
     color: #fff;
+    text-decoration: none;
+}
+.sidebar {
+    float: right;
+    background-color: #cdcdcd;
+    width: 28%;
+}
+
+.side-widget {
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.side-widget li {
+    list-style: none;
+    line-height: 2.2em;
+    border-bottom: 1px dotted #ccc;
+}
+.side-widget a {
     text-decoration: none;
 }

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main>
-    <div class="container">
+<div class="container clearfix">
+    <main>
         <?php if ( have_posts() ): ?>
             <?php while ( have_posts() ): the_post(); ?>
                 <article class="post">
@@ -24,7 +24,8 @@
         <?php else : ?>
             <?php echo wpautop( 'Sorry, no posts were found' ) ?>
         <?php endif; ?>
-    </div>
-</main>
+
+        <?php comments_template(); ?>
+    </main>
 
 <?php get_footer(); ?>

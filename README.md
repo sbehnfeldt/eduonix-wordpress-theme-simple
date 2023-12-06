@@ -56,3 +56,9 @@ File `header.php` : `wp_nav_menu()` to display a menu.
 
 File `page.php` : Display page (without which, `single.php` is used)
 
+## Lesson 8) Widget Locations & Comments
+Add sidebar to each page (HTML). Display widgets in the sidebar. Display comments and comment form on Single Post page.
+* `is_active_sidebar()`
+* `dynamic_sidebar()`
+* `comments_template()`
+* `comments.php`
