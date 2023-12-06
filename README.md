@@ -49,4 +49,10 @@ after_setup_theme
 filters:
 excerpt_length
 
+## Lesson 7) Pages and Menus
+Action `after_setup_theme` : `register_nav_menus()` to add support for menus to the theme.  
+
+File `header.php` : `wp_nav_menu()` to display a menu.  
+
+File `page.php` : Display page (without which, `single.php` is used)
 
