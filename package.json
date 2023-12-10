@@ -1,0 +1,15 @@
+{
+  "name": "wordpress-theme-simple",
+  "version": "1.0.0",
+  "description": "First WordPress theme developed in Udemy series \"Learn to Create WordPress Themes by Building 10 Projects\" (https://www.udemy.com/course/learn-to-create-wordpress-themes-by-building-10-projects/) by Eduonix (https://www.udemy.com/user/eduonix/) et al.",
+  "scripts": {
+    "sass:compile" : "node-sass sass/main.scss style.css",
+    "sass:watch" : "node-sass sass/main.scss style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Behnfeldt",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

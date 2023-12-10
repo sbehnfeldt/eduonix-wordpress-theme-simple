@@ -1,0 +1,15 @@
+/*
+  Theme Name: Simple
+  Author: Stephen Behnfeldt
+  Description: Very simple Wordpress theme based on "Learn to Create WordPress Themes by Building 10 Projects"
+  Version: 1.0
+*/
+
+@import "abstracts/mixins";
+@import "base/base";
+@import "layout/main-nav";
+@import "layout/main";
+@import "layout/sidebar";
+@import "components/article";
+@import "components/button";
+@import "components/side-widget";
